@@ -213,10 +213,10 @@ function createFallThroughHandler(
 #### Options
 
 | Name           | Type                                  | Description                                                   |
-| -------------- | ------------------------------------- | ------------------------------------------------------------- | ----------------------------------------- |
+| -------------- | ------------------------------------- | ------------------------------------------------------------- |
 | `topic`\*      | `string`                              | -                                                             |
 | `collection`\* | `string`                              | The firebase collection                                       |
-| `transform`    | `TransformStrategy                    | (change: DocumentChange) => any`                              | Called to transform the broadcast-payload |
+| `transform`    | `TransformStrategy`                   | `(change: DocumentChange) => any`                              | Called to transform the broadcast-payload |
 | `filter`       | `(change: DocumentChange) => boolean` | Called to filter document changes before they are broadcasted |
 
 > \* required
